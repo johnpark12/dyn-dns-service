@@ -3,3 +3,11 @@ spring:
     user:
       name: lmao
       password: lmaolmao
+  datasource:
+    url: jdbc:mysql://${MYSQL_HOST:localhost}:3306/dnsmap
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
